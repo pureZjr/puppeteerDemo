@@ -34,9 +34,9 @@ let timeout = function (delay) {
   await timeout(1000);
 
   // 3.输入账号密码
-  page.type('input[data-type=email]','pureZjr')
+  page.type('input[data-type=email]','')
   await timeout(500);
-  page.type('input[placeholder=密码]','ZXCasd123')
+  page.type('input[placeholder=密码]','')
   await timeout(1000);
   
   // 4.点击验证
