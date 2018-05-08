@@ -8,4 +8,3 @@ npm i
 
 node run
 
-test
