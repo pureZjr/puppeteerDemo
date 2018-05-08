@@ -20,15 +20,19 @@ let timeout = function (delay) {
 
  async function run() {
   const browser = await puppeteer.launch({
-      headless:false //这里我设置成false主要是为了让大家看到效果，设置为true就不会打开浏览器
+      headless:true //这里我设置成false主要是为了让大家看到效果，设置为true就不会打开浏览器
   });
   page = await browser.newPage();
 
   // 1.打开前端网
   await page.emulate(iPhone);
-  await page.goto('https://www.qdfuns.com/');
+  await page.goto('https://wenku.baidu.com/view/2fe0193816fc700aba68fc10.html?from=search');
   await timeout(1000);
   
+  await page.pdf({path: 'page.pdf'});
+  await timeout(1500);
+  page.close()
+
   // 2.打开登录页面
   page.click('a[data-type=login]')
   await timeout(1000);
