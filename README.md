@@ -16,4 +16,4 @@ node run
 
 node run2
 
-![](https://note.ss.purevivi.chat/8df16ccd8cafd775a0da44f8bf993d2b.gif)
+![image](https://note.ss.purevivi.chat/8df16ccd8cafd775a0da44f8bf993d2b.gif)
